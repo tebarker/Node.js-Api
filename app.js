@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 
 const DefinitionsRoute = require('./routes/Definitions');
 //Setting up new route "DefinitionsRoute"
-app.use('/Definitions', DefinitionsRoute);
+app.use('/definitions', DefinitionsRoute);
 
 // start server 
 app.listen(3000, console.log("Listening from port 3000"));
