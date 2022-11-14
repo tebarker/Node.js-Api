@@ -22,11 +22,13 @@ app.use(bodyParser.json());
 
 //ROUTES 
 //a get request that brings up the homepage of the app
-app.get('/', (req, res) => {res.send("Node JS REST API Definitions");});
+app.get('/', (req, res) => {
+    res.send("Node JS REST API Definitions")
+});
 
-const DefinitionsRoute = require('./routes/definitions');
+const DefinitionsRoute = require('./routes/Definitions');
 //Setting up new route "DefinitionsRoute"
-app.use('/definitions', DefinitionsRoute);
+app.use('/Definitions', DefinitionsRoute);
 
 // start server 
 app.listen(3000, console.log("Listening from port 3000"));
