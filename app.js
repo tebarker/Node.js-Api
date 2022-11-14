@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 //a get request that brings up the homepage of the app
 app.get('/', (req, res) => {res.send("Node JS REST API Definitions");});
 
-const DefinitionsRoute = require('./routes/Definitions');
+const DefinitionsRoute = require('./routes/definitions');
 //Setting up new route "DefinitionsRoute"
 app.use('/definitions', DefinitionsRoute);
 
